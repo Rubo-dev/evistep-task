@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script> 
+    <title>Test Document</title>
+</head>
+<body>
+    <header>
+        <div class="header_block">
+            <div class="container head_cont d-flex">
+                <a href="#">
+                    <div class="logo_block d-flex">
+                        <img src="./images/logo.svg" alt="logo">
+                        <h2>
+                            Test Name
+                            <span>for you</span>
+                        </h2>
+                    </div>
+                </a>
+                <div class="account_block">
+                    <a href="#" class="sign">Sign in</a>
+                    <a href="#" class="regist">| Register</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Active</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#third_section">Video</a>
+                        <a class="dropdown-item" href="#second_section">Features</a>
+                        <a class="dropdown-item" href="#plane_section">Planes</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#third_section">Video</a>
+                        <a class="dropdown-item" href="#second_section">Features</a>
+                        <a class="dropdown-item" href="#plane_section">Planes</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#third_section">Video</a>
+                        <a class="dropdown-item" href="#second_section">Features</a>
+                        <a class="dropdown-item" href="#plane_section">Planes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section id = "first_section">
+            <div class = "container">
+                <div class="row main_first_block">
+                    <div class="col-lg-6 col-md-6 col-sm-12 left_block">
+                        <img src="./images/plane.svg" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 right_block">
+                        <h1>
+                            Great plane
+                            <br>
+                            For Japan
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim quaerat assumenda adipisci neque voluptates odio nobis autem! Accusantium ullam porro assumenda dicta provident delectus ratione vero eius sequi tempora.
+                        </p>
+                        <button class="btn btn-dark">Click me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="swiper_section">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style = "background:url(./images/logo-2.svg)"></div>
+                    <div class="swiper-slide" style = "background:url(./images/logo-3.svg)"></div>
+                    <div class="swiper-slide" style = "background:url(./images/logo-6.svg)"></div>
+                    <div class="swiper-slide" style = "background:url(./images/logo-8.svg)"></div>
+                    <div class="swiper-slide" style = "background:url(./images/logo-10.svg)"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+            </div>
+        </div> 
+        <section id = "third_section">
+            <div class="d-flex video_block">
+                <div class="number_mask">
+                    <iframe src="https://player.vimeo.com/video/58516066?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture;muted" allowfullscreen></iframe>              
+                </div>
+            </div>
+        </section>
+        <section id = "second_section">
+            <div class="container d-flex">
+                <h2 class="text-center">Features</h2>
+                <div class="features_grid my-4">
+                    <div class="grid_block" style = "background:url(./images/icon_3.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_1.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_2.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_3.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_4.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_11.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_2.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_1.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_3.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_4.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_2.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                    <div class="grid_block" style = "background:url(./images/icon_1.png)">
+                        <h4>Title</h4>
+                        <br>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-4 learn-btn">
+                    Learn more
+                </button>
+            </div>
+        </section>
+        <section id="plane_section">
+            <div class="container">
+                <div class="plane_block">
+                    <div class="aeroplane_img">
+                    </div>
+                    <div class="plane_text_block">
+                        <h3>Boing 442</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum? Cumque labore vitae enim voluptatibus deserunt. Eaque nam ut similique pariatur. Vero exercitationem error labore officiis quia natus, molestias cupiditate.</p>
+                        <button class="btn btn-primary mt-4 learn-btn">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="flying_plane_section">
+            <div class="container">
+                <div class="flying_plane">
+                </div>
+            </div>
+        </div>
+       <section id="pilots_section">
+           <div class="container">
+               <div class="pilots_block">
+                   <div class="pilots_text_block">
+                       <h3>Our Team</h3>
+                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus iusto commodi dolore delectus debitis id autem voluptatem, earum iure numquam enim praesentium repudiandae. Pariatur, nihil deleniti cum quam ducimus nesciunt.</p>
+                       <button class="btn btn-primary mt-4 learn-btn">
+                            Learn more
+                        </button>
+                    </div>
+                   <div class="pilots_image"></div>
+                   
+               </div>
+           </div>
+       </section>
+       <div class="section_divider">
+           <h2>Find Us</h2>
+       </div>
+       <section id = "map">
+            <div class="map_block">
+                <div class="map-global">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41027.37538483418!2d44.40346205587185!3d40.156138651837374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abe36a0b85e07%3A0x449b496066773057!2z1LbVvtWh1oDVqdW21bjWgSDVhNWr1bvVodWm1aPVodW11avVtiDVldWk1aHVttWh1b7VodWv1aHVtdWh!5e0!3m2!1shy!2s!4v1613639493163!5m2!1shy!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="map-info">
+                    <div class="airport"></div>
+                    <h3>Our main base</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est non nesciunt excepturi dolorum iure facilis reprehenderit repellendus, atque sed velit corporis hic fuga facere, perspiciatis rerum vitae. Facere, sint culpa.</p>
+                    <button class="btn btn-dark mt-4 learn-btn">
+                        Learn more
+                    </button>
+                </div>
+            </div>
+       </section>
+       <div class="section_divider">
+            <h2>Contact Us</h2>
+        </div>
+       <section id="contact-us">
+            <div class="container">
+                <div class="contact-block d-flex">
+                    <form action="/action_page.php">
+                        <div class="form-block form-group">
+                            <input  class="item1 form-control" type="text" placeholder="Enter name">
+                            <input class="item2 form-control" type="email" placeholder="Enter email">
+                            <textarea placeholder="Enter your message" class="item3 form-control" name="" id="" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>  
+                    </form> 
+                    <div class="form-text-block">
+                        <h3>Feel free to contact us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda unde tenetur, eveniet dolores natus ullam deserunt iure, ab sapiente autem qui non consequuntur alias illum, voluptatum maxime nihil quisquam error.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda unde tenetur, eveniet dolores natus ullam deserunt iure, ab sapiente autem qui non consequuntur alias illum, voluptatum maxime nihil quisquam error.</p>
+                    </div>                 
+                </div>
+            </div>
+       </section>
+       <footer>
+           <div class="footer">
+               <div class="container">
+                   <div class="category_grid">
+                       <div class="category_block">
+                           <h5>Category name</h5>
+                           <span>Category</span>
+                           <span>Category</span>
+                           <span>Category</span>
+                           <span>Category</span>
+                       </div>
+                       <div class="category_block">
+                            <h5>Category name</h5>
+                            <span>Category</span>
+                            <span>Category</span>
+                            <span>Category</span>
+                            <span>Category</span>
+                        </div>
+                        <div class="category_block">
+                            <h5>Category name</h5>
+                            <span>Category</span>
+                            <span>Category</span>
+                            <span>Category</span>
+                            <span>Category</span>
+                        </div>
+                        <div class="category_block">
+                            <h5>Contact details</h5>
+                            <span>Phone | +555741118</span>
+                            <span>Mail | adminmail@mail.com</span>
+                            <span>Address | Some state, 26, Arm</span>
+                            <span>Address | Second state, 88, Eu</span>
+                        </div>
+                        <div class="category_block subscribe">
+                            <h5>Subscribe</h5>
+                            <span class="mb-2">Get the latest news.</span>
+                            <div class="d-flex sub_block">
+                                <input placeholder="Email" type="email" class="form-control mail-sub">
+                                <button type="submit" class="btn btn-primary mail-btn">Submit</button>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="subfooter">
+            <span>© All rights reserved</span> 
+            <span>Landing page by Rub</span>
+           </div>
+       </footer>
+    </main>
+</body>
+<script>
+$(document).ready(function() {
+    var Swipes = new Swiper('.swiper-container', {
+        loop: true,
+        speed: 400,
+        spaceBetween: 100,
+        slidesPerView: 6,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: {
+            delay: 1000,
+        },
+    });
+// init controller
+    var controller = new ScrollMagic.Controller();
+    var tl = new TimelineMax();
+    tl.fromTo(
+    "section.panel.turqoise",
+    1,
+    { xPercent: 100 },
+    { xPercent: 0, ease: Linear.easeNone },
+    "+=1"
+    );
+    tl.fromTo(
+    "section.panel.bordeaux",
+    1,
+    { yPercent: 100 },
+    { yPercent: 0, ease: Linear.easeNone },
+    "+=1");
+    // create a scene
+    var scene = new ScrollMagic.Scene({
+        duration: 1200, // the scene should last for a scroll distance of 100px
+        triggerHook: "onLeave",
+        triggerElement: '#third_section'
+    })
+        .setClassToggle('.number_mask', 'scaleUp')
+        .setPin('#third_section') // pins the element for the the scene's duration
+        .addTo(controller); 
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#flying_plane_section",
+        triggerHook: "onLeave",
+        duration: 300,
+        tweenChanges: true
+        })
+        .setPin("#flying_plane_section")
+        .setTween(tl)
+        .addTo(controller);
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#pilots_section",
+        duration: 400,
+        })
+        .setClassToggle('.pilots_block', 'fadeUp')
+        .addTo(controller);    
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#contact-us",
+        duration: 500,
+        })
+        .setClassToggle('.contact-block', 'fadeUp')
+        .addTo(controller);      
+});
+
+</script>
+</html>
